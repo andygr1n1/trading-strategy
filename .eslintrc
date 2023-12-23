@@ -1,0 +1,22 @@
+{
+    "ignorePatterns": ["/dist/", "/node_modules/", "./nuxt.config.ts"],
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parser": "vue-eslint-parser",
+    "extends": ["@nuxtjs/eslint-config-typescript"],
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [],
+    "rules": {
+        "vue/no-unused-vars": "warn",
+        "no-unused-vars": "warn",
+        "@typescript-eslint/no-unused-vars": "warn"
+    }
+}
