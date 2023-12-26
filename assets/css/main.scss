@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --top-bar-height: 30px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  @apply bg-slate-900 focus:outline-none focus-visible:outline-none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ul {
+  @apply m-0 p-0;
+}
+
+li {
+  @apply list-none;
+}
+
 @layer base {
   body {
     @apply bg-slate-950 text-white;

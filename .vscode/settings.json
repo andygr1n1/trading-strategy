@@ -4,7 +4,7 @@
   "editor.detectIndentation": false,
   "editor.defaultFormatter": "Vue.volar",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "always"
+    "source.fixAll": "always",
   },
   "files.associations": {
     "*.css": "tailwindcss"
@@ -22,5 +22,8 @@
     "className",
     "ngClass",
     "ui"
-  ]
+  ],
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  }
 }

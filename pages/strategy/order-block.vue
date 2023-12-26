@@ -9,7 +9,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    <h1>STRATEGY</h1>
+  <div class="flex min-h-[calc(100vh-var(--top-bar-height))]">
+    <StrategySideMenu />
+    <div class="w-full">
+      Order block
+    </div>
   </div>
 </template>
