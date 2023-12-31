@@ -13,10 +13,11 @@ const isActive = (path: string) => {
 </script>
 
 <template>
-  <div class="min-w-[200px] border-r border-r-teal-500/50 h-full min-h-[calc(100vh-var(--top-bar-height))]">
+  <div
+    class="md:min-w-[200px] flex-col w-full md:w-[200px] border-r border-transparent md:border-r-teal-500/50 h-full md:min-h-[calc(100vh-var(--top-bar-height))]">
     <input
       v-model="filter"
-      class="rounded-sm px-2 h-10 w-[calc(100%-32px)] focus:w-[calc(100%-34px)] m-4 border border-transparent focus:border-teal-500"
+      class="rounded-sm px-2 sticky top-0 border-white/20 md:border-transparent h-10 w-[calc(100%-32px)] focus:w-[calc(100%-34px)] m-4 border  focus:border-teal-500"
       placeholder="Search..." @input="onChangeFilter" />
     <template v-for="item in filteredNavigation" :key="item">
       <NuxtLink :to="`/strategy/${item}`">
@@ -28,9 +29,9 @@ const isActive = (path: string) => {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .menu-item {
-  @apply px-5 py-2 cursor-pointer hover:text-teal-500 duration-300;
+  @apply px-5 py-2 mx-4 md:mx-0 cursor-pointer border-l md:border-l-transparent text-xl md:text-base border-l-white/20 hover:text-teal-500 duration-300;
 }
 
 .active {

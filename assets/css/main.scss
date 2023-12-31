@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --top-bar-height: 30px;
+  --top-bar-height: 70px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -14,7 +14,7 @@ input::-webkit-inner-spin-button {
 }
 
 input {
-  @apply bg-slate-900 focus:outline-none focus-visible:outline-none;
+  @apply bg-slate-900 text-xl md:text-base focus:outline-none focus-visible:outline-none;
 }
 
 /* Firefox */

@@ -9,5 +9,10 @@ export default defineNuxtConfig({
     cssPath: '~/assets/main.scss'
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['@pinia/nuxt', 'nuxt-lodash', '@nuxtjs/tailwindcss']
+  modules: [
+    '@pinia/nuxt',
+    'nuxt-lodash',
+    '@nuxtjs/tailwindcss',
+    '@ant-design-vue/nuxt'
+  ]
 })
