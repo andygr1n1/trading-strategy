@@ -3,36 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --top-bar-height: 70px;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input {
-  @apply bg-slate-900 text-xl md:text-base focus:outline-none focus-visible:outline-none;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-ul {
-  @apply m-0 p-0;
-}
-
-li {
-  @apply list-none;
+  --top-bar-height: 40px;
 }
 
 @layer base {
   body {
-    @apply bg-slate-950 text-white;
+    @apply bg-gray-900 text-gray-300 ml-10 overflow-y-scroll;
+    font-family: "Ubuntu";
   }
   h1 {
     @apply text-5xl md:text-6xl;
@@ -51,5 +28,42 @@ li {
   }
   h6 {
     @apply text-lg md:text-xl;
+  }
+
+  p {
+    @apply my-2 leading-8;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input {
+    @apply bg-slate-950 text-xl md:text-lg focus:outline-none focus-visible:outline-none;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  ul {
+    @apply m-0 p-0;
+  }
+
+  li {
+    @apply list-none;
+  }
+}
+
+@layer utilities {
+  .bg-gradient {
+    @apply bg-gradient-to-r from-teal-600 via-teal-500 to-blue-500;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-teal-600 via-teal-500 to-blue-500 text-transparent bg-clip-text;
   }
 }

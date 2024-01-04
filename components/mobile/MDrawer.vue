@@ -22,7 +22,7 @@ const toggleShowDrawer = (value: boolean) => {
     @after-open-change="afterOpenChange"
   >
     <div class="flex flex-col flex-auto h-[calc(100%-64px)] overflow-auto mb-8">
-      <slot name="content" />
+      <slot name="content" :action="() =>toggleShowDrawer(false)" />
     </div>
 
     <!-- footer -->

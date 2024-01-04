@@ -7,30 +7,25 @@ const isActive = (path: string) => {
 </script>
 
 <template>
-  <ul class="flex gap-2  items-center h-[var(--top-bar-height)]">
+  <ul class="flex gap-2 items-center mx-auto w-fit justify-center h-[var(--top-bar-height)]">
     <li>
       <NuxtLink to="/" :class="{ active: isActive('') }">
-        <HomeFilled class="icon" style="font-size: 24px;" />
+        <HomeFilled class="icon" style="font-size: 18px;" />
       </NuxtLink>
     </li>
     <li>
       <NuxtLink to="/check-list" :class="{ active: isActive('check-list') }">
-        <SafetyCertificateFilled class="icon" style="font-size: 24px;" />
+        <SafetyCertificateFilled class="icon" style="font-size: 18px;" />
       </NuxtLink>
     </li>
     <li>
       <NuxtLink to="/strategy" :class="{ active: isActive('strategy') }">
-        <SignalFilled class="icon" style="font-size: 24px;" />
+        <SignalFilled class="icon" style="font-size: 18px;" />
       </NuxtLink>
     </li>
     <li>
       <NuxtLink to="/risk-management" :class="{ active: isActive('risk-management') }">
-        <ThunderboltFilled class="icon" style="font-size: 24px;" />
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink to="/book" :class="{ active: isActive('book') }">
-        <BookFilled class="icon" style="font-size: 24px;" />
+        <ThunderboltFilled class="icon" style="font-size: 18px;" />
       </NuxtLink>
     </li>
   </ul>
@@ -38,7 +33,7 @@ const isActive = (path: string) => {
 
 <style scoped>
 li {
-  @apply p-2 flex flex-auto md:flex-initial items-center justify-center;
+  @apply p-1 flex flex-auto md:flex-initial items-center justify-center;
 
 }
 
@@ -47,7 +42,7 @@ li>a {
 }
 
 li>a>.icon {
-  @apply h-8 flex items-center justify-center;
+  @apply h-4 flex items-center justify-center;
 }
 
 .active {

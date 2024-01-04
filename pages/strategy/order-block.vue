@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'topbar'
+  layout: 'default'
 })
 useSeoMeta({
   title: 'Trading strategy',
@@ -9,10 +9,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="flex min-h-[calc(100vh-var(--top-bar-height))]">
-    <StrategySideMenu />
-    <div class="w-full">
-      Order block
-    </div>
+  <div class="w-full h-full">
+    Order block
   </div>
 </template>

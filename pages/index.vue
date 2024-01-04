@@ -3,6 +3,10 @@ useSeoMeta({
   title: 'Trading strategy',
   description: 'The best trading strategy'
 })
+
+definePageMeta({
+  layout: 'default'
+})
 </script>
 
 <template>
@@ -31,19 +35,13 @@ useSeoMeta({
           Control your money by following simple rules
         </div>
       </NuxtLink>
-      <NuxtLink to="/book" class="module">
-        <h6>Book</h6>
-        <div class="text-sm opacity-90">
-          All you need to know about successful trading
-        </div>
-      </NuxtLink>
     </div>
   </div>
 </template>
 
 <style>
 .module {
-  @apply bg-teal-500 hover:bg-teal-400 duration-300 h-28 p-5 w-full rounded-md flex flex-col gap-2 flex-[100%] md:flex-[40%] lg:flex-1;
+  @apply bg-teal-500 text-slate-950 hover:bg-teal-400 duration-300 h-28 p-5 w-full rounded-md flex flex-col gap-2 flex-[100%] md:flex-[40%] lg:flex-1;
 }
 
 .module-h {

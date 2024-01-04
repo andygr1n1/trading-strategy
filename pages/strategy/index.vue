@@ -1,36 +1,36 @@
 <script setup lang="ts">
-
 definePageMeta({
-  layout: 'topbar'
+  layout: 'default'
 })
 useSeoMeta({
   title: 'Trading strategy',
   description: 'The best trading strategy'
 })
-
 </script>
 
 <template>
-  <div class="flex flex-col w-full min-h-[calc(100vh-var(--top-bar-height))]">
-    <div class="flex flex-auto">
-      <StrategySideMenu :class="'hidden md:flex'" />
-      <div class="w-full p-5 text-xl">
-        First find smart money blocks.
-      </div>
-    </div>
-    <div class="fixed bottom-0 items-center justify-center flex md:hidden bg-slate-950 w-full p-2 pb-6">
-      <MobileMDrawer>
-        <template #button>
-          <AppstoreFilled
-            class="h-8 p-2 flex items-center justify-center cursor-pointer hover:text-teal-500"
-            style="font-size: 24px;" />
-        </template>
-        <template #content>
-          <div>
-            <StrategySideMenu />
-          </div>
-        </template>
-      </MobileMDrawer>
-    </div>
+  <div class="w-full h-full">
+    <p>Сперва анализируем инструмент на предмет блоков.</p>
+    <p>Все блоки анализируются  <UniversalUFocus text="на фоновом тайм фрейме" />.</p>
+    <p>
+      Увидев  <UniversalUFocus text="Ордер Блок" />, мы предполагаем, что
+      крупный игрок выставил лимитную заявку, от которой будет отскакивать
+      цена. С большой вероятностью цена отскочит минимум 1 раз.
+    </p>
+
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/order-block-1.png" description="Order block" />
+    <p>
+      Задача  <UniversalUFocus text="Брейкер Блока" /> –
+      совершить движение цены с манипуляцией, для сбора ликвидности
+      в сторону значимых максимумов и минимумов с последующим пробоем в обратном направлении.
+    </p>
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/1-2__breaker-block_2.png" description="Breaker block" />
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/1-2__breaker-block_1.png" description="Breaker block" />
+    <p>
+      <UniversalUFocus text="Митигейшн Блок" /> –
+      крупный игрок выкидывает из рынка мелких спекулянтов. После закрывает свои убыточные позиции и продолжает движение в нужном ему направлении.
+    </p>
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/1-3-1-mitigation.png" description="Mitigation block" />
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/1-3-2-mitigation.png" description="Mitigation block" />
   </div>
 </template>

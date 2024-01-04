@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   tailwindcss: {
-    exposeConfig: true,
+    // exposeConfig: true,
     cssPath: '~/assets/main.scss'
   },
   css: ['~/assets/css/main.scss'],
@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'nuxt-lodash',
     '@nuxtjs/tailwindcss',
-    '@ant-design-vue/nuxt'
+    '@ant-design-vue/nuxt',
+    '@nuxt/image',
+    ['@nuxtjs/google-fonts', { families: { Ubuntu: true }, display: 'swap', prefetch: true }]
   ]
 })
