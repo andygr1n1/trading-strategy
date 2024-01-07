@@ -1,3 +1,14 @@
+<script setup lang="ts">
+
+useSeoMeta({
+  title: 'Crypto trading strategy',
+  ogTitle: 'Crypto trading strategy',
+  ogDescription: 'Trade like God with best trading strategy for crypto',
+  description: 'The best trading strategy for crypto',
+  ogImage: 'https://firebunny-storage.b-cdn.net/trading/trading-strategy/blog/crypto-trading-strategy-logo.webp'
+})
+</script>
+
 <template>
   <div>
     <div class="flex flex-col w-full min-h-[calc(100vh-var(--top-bar-height))]">

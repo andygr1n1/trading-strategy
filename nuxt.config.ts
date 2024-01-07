@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   tailwindcss: {
-    // exposeConfig: true,
+    exposeConfig: true,
     cssPath: '~/assets/main.scss'
     // config: {
     //   plugins: [require('tailwind-scrollbar')]

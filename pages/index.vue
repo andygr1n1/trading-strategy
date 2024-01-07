@@ -5,7 +5,8 @@ useSeoMeta({
 })
 
 definePageMeta({
-  layout: 'default'
+  layout: 'default',
+  title: 'Trading strategy'
 })
 </script>
 

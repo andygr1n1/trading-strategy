@@ -1,10 +1,12 @@
 <script setup lang="ts">
+
+useSeoMeta({
+  title: 'The best trading strategy, the best crypto strategy',
+  description: 'The best trading strategy, the best crypto strategy'
+})
+
 definePageMeta({
   layout: 'default'
-})
-useSeoMeta({
-  title: 'Trading strategy',
-  description: 'The best trading strategy'
 })
 </script>
 

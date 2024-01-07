@@ -2,10 +2,7 @@
 definePageMeta({
   layout: 'default'
 })
-useSeoMeta({
-  title: 'Trading strategy',
-  description: 'The best trading strategy'
-})
+
 </script>
 
 <template>
