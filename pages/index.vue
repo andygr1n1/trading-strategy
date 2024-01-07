@@ -15,24 +15,10 @@ definePageMeta({
       trading strategy
     </h1>
     <div class="flex gap-5 mx-5 mt-20 w-full px-5 flex-wrap max-w-[480px] md:max-w-screen-md lg:max-w-screen-lg">
-      <NuxtLink to="/check-list" class="module">
-        <h6>
-          Check list
-        </h6>
-        <div class="text-sm opacity-90">
-          Be ready
-        </div>
-      </NuxtLink>
       <NuxtLink to="/strategy" class="module">
         <h6>Strategy</h6>
         <div class="text-sm opacity-90">
           Play games by on your own rules
-        </div>
-      </NuxtLink>
-      <NuxtLink to="/risk-management" class="module">
-        <h6>Risk management</h6>
-        <div class="text-sm opacity-90">
-          Control your money by following simple rules
         </div>
       </NuxtLink>
     </div>

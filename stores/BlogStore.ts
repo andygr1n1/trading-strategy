@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const useStrategyStore = defineStore('StrategyStore', {
+export const useBlogStore = defineStore('useBlogStore', {
   state: () => ({ navigation, filter: '' }),
   getters: {
     filteredNavigation: (state) => {
@@ -26,6 +26,6 @@ export const useStrategyStore = defineStore('StrategyStore', {
 const navigation: {title:string, data: string[]}[] = [
   {
     title: 'menu',
-    data: ['strategy', 'check-list', 'risk-management']
+    data: ['blog']
   },
-  { title: 'blocks', data: ['order-block', 'breaker-block', 'mitigation-block'] }]
+  { title: 'crypto', data: ['icp-bright-future'] }]

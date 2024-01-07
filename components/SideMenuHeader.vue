@@ -9,23 +9,13 @@ const isActive = (path: string) => {
 <template>
   <ul class="flex gap-2 items-center mx-auto w-fit justify-center h-[var(--top-bar-height)]">
     <li>
-      <NuxtLink to="/" :class="{ active: isActive('') }">
+      <NuxtLink to="/blog" :class="{ active: isActive('blog') }">
         <HomeFilled class="icon" style="font-size: 18px;" />
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink to="/check-list" :class="{ active: isActive('check-list') }">
-        <SafetyCertificateFilled class="icon" style="font-size: 18px;" />
       </NuxtLink>
     </li>
     <li>
       <NuxtLink to="/strategy" :class="{ active: isActive('strategy') }">
         <SignalFilled class="icon" style="font-size: 18px;" />
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink to="/risk-management" :class="{ active: isActive('risk-management') }">
-        <ThunderboltFilled class="icon" style="font-size: 18px;" />
       </NuxtLink>
     </li>
   </ul>
@@ -46,6 +36,6 @@ li>a>.icon {
 }
 
 .active {
-  @apply bg-teal-500 duration-300;
+  @apply bg-gradient duration-300;
 }
 </style>

@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  routeRules: {
+    '/strategy': { redirect: '/strategy/strategy' },
+    '/': { redirect: '/blog/blog' },
+    '/blog': { redirect: '/blog/blog' }
+  },
   devtools: { enabled: true },
   typescript: {
     typeCheck: true
@@ -7,6 +12,10 @@ export default defineNuxtConfig({
   tailwindcss: {
     // exposeConfig: true,
     cssPath: '~/assets/main.scss'
+    // config: {
+    //   plugins: [require('tailwind-scrollbar')]
+    // }
+
   },
   css: ['~/assets/css/main.scss'],
   modules: [

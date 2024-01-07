@@ -3,8 +3,8 @@ import { ref } from 'vue'
 
 const open = ref<boolean>(false)
 
-const afterOpenChange = (bool: boolean) => {
-  console.info('open', bool)
+const afterOpenChange = (_bool: boolean) => {
+  // console.info('open', bool)
 }
 
 const toggleShowDrawer = (value: boolean) => {

@@ -9,7 +9,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full animate-opacity">
     Mitigation block
   </div>
 </template>

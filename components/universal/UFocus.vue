@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <span
-    class="bg-teal-500 font-bold px-2 rounded-md text-slate-950">
+    class="text-gradient font-bold rounded-md ">
     {{ text }}
   </span>
 </template>

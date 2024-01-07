@@ -9,7 +9,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full animate-opacity">
     Breaker block
   </div>
 </template>
