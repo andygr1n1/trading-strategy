@@ -15,5 +15,8 @@ useSeoMeta({
     </h5>
     <p><UniversalUFocus text="From Block and From Level." /></p>
     <p><UniversalUFocus text="If the trade is from a level to a reversal, then in addition to the signal there should be a step." /></p>
+    <p>
+      Сигнал на вход должен появиться не дальше чем на 1 среднюю свечу от уровня
+    </p>
   </div>
 </template>

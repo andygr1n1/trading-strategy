@@ -12,7 +12,7 @@ const { onChangeFilter } = blogStore
 const { filter, filteredNavigation } = storeToRefs(blogStore)
 
 const isActive = (path: string) => {
-  return route.path.split('/')[2] === path
+  return route.path.split('/')[3] === path.split('/')[1]
 }
 
 </script>

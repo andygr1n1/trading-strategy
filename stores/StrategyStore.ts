@@ -30,6 +30,10 @@ const navigation: INav[] = [
     data: [{ title: 'strategy', link: 'menu/strategy' }, { title: 'check-list', link: 'menu/check-list' }, { title: 'risk-management', link: 'menu/risk-management' }]
   },
   {
+    title: 'levels',
+    data: [{ title: 'level', link: 'levels/level' }]
+  },
+  {
     title: 'blocks',
     data: [{
       title: 'order-block',
@@ -42,9 +46,29 @@ const navigation: INav[] = [
     title: 'primary signals',
     data: [
       { title: 'Narrowing + expansion', link: 'primary-signals/narrowing-expansion' },
-      { title: 'False breakout + false takeaway', link: 'primary-signals/false-breakout' },
+      { title: 'False breakout + false takeaway (V)', link: 'primary-signals/false-breakout' },
       { title: 'Double vertex / underworld', link: 'primary-signals/double-vertex-underworld' },
       { title: 'Divergence + realization', link: 'primary-signals/divergence-realization' },
       { title: 'Touch + step', link: 'primary-signals/touch-step' }
+    ]
+  },
+  {
+    title: 'stop signals',
+    data: [{
+      title: 'Triangle',
+      link: 'stop-signals/triangle'
+    },
+    {
+      title: 'Breakdown',
+      link: 'stop-signals/Breakdown'
+    }
+    ]
+  },
+  {
+    title: 'indicators',
+    data: [{
+      title: 'Delta',
+      link: 'indicators/delta'
+    }
     ]
   }]

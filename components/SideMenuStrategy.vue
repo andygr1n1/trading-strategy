@@ -20,20 +20,22 @@ const isActive = (path: string) => {
 <template>
   <input
     v-model="filter"
-    class="rounded-sm px-2 sticky top-0 border-white/20 md:border-transparent h-10 w-[calc(100%-32px)] focus:w-[calc(100%-34px)] m-4 border  focus:border-teal-500"
+    class="rounded-sm px-2 sticky top-0 border-white/20 md:border-transparent min-h-[40px] h-10 w-[calc(100%-32px)] focus:w-[calc(100%-34px)] mx-4 my-10 border  focus:border-teal-500"
     placeholder="Search..." @input="onChangeFilter" />
-  <template v-for="item in filteredNavigation" :key="item">
-    <div class="opacity-30 text-slate-400 pointer-events-none font-bold uppercase py-2">
-      {{ item.title }}
-    </div>
-    <template v-for="subMenu in item.data " :key="subMenu">
-      <NuxtLink :to="`/strategy/${subMenu.link}`">
-        <li class="menu-item" :class="{ active: isActive(subMenu.link) }" @click="action?.()">
-          {{ capitalize(subMenu.title) }}
-        </li>
-      </NuxtLink>
+  <div class="overflow-auto styled-scroll pb-10">
+    <template v-for="item in filteredNavigation" :key="item">
+      <div class="opacity-30 text-slate-400 pointer-events-none font-bold uppercase py-2">
+        {{ item.title }}
+      </div>
+      <template v-for="subMenu in item.data " :key="subMenu">
+        <NuxtLink :to="`/strategy/${subMenu.link}`">
+          <li class="menu-item" :class="{ active: isActive(subMenu.link) }" @click="action?.()">
+            {{ capitalize(subMenu.title) }}
+          </li>
+        </NuxtLink>
+      </template>
     </template>
-  </template>
+  </div>
 </template>
 
 <style scoped lang="scss">

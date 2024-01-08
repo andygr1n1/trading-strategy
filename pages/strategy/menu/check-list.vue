@@ -11,10 +11,11 @@ useSeoMeta({
     <h5 class="text-slate-500 opacity-50">
       Check list
     </h5>
+    <ADivider class="bg-slate-500" />
     <h6 class="uppercase">
       Прежде чем зайти в сделку
     </h6>
-    <ol class="flex flex-col gap-3 py-5 list-disc animate-opacity ">
+    <ol class="flex flex-col gap-3 py-5 list-disc animate-opacity">
       <li>
         <ACheckbox size="large" /><span>ATR</span>
       </li>
@@ -43,6 +44,26 @@ useSeoMeta({
         <ACheckbox size="large" /><span>Сделка 100% ожидаема</span>
       </li>
     </ol>
+    <ADivider class="bg-slate-500" />
+    <h6 class="uppercase">
+      Предостережения
+    </h6>
+    <ul class="flex flex-col gap-3 py-5 !list-disc animate-opacity">
+      <li class="list-disc list-item list ">
+        <ThunderboltOutlined class="text-amber-500 mt-1" /> <div>Паттерны (голова и плечи и т.д.) не стоит рассматривать как сигнал</div>
+      </li>
+      <li class="list-disc list-item list ">
+        <ThunderboltOutlined class="text-amber-500 mt-1" />
+        <div>На <UniversalUFocus text="V-образном развороте," /> уровень должен пробиваться - ложный вынос.</div>
+      </li>
+      <li class="list-disc list-item list">
+        <ThunderboltOutlined class="text-amber-500 mt-1" />
+        <div>
+          Если у инструмента в моменте была <UniversalUFocus text="огромная дивергенция, а свеча не шелохнулась," /> то инструмент даёт хорошее движение в сторону сигнала, который был до этого,
+          даже если дивергенция в противоположную сторону!
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 
