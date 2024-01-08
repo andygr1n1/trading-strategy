@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
 useSeoMeta({
-  title: 'Crypto trading strategy',
+  title: 'Trading strategy',
   ogTitle: 'Crypto trading strategy',
   ogDescription: 'Trade like God with best trading strategy for crypto',
-  description: 'The best trading strategy for crypto',
+  description: 'The best trading strategy for crypto. Nickname: andygr1n1. Author:Andrei Grini',
   ogImage: 'https://firebunny-storage.b-cdn.net/trading/trading-strategy/blog/crypto-trading-strategy-logo.webp'
 })
 </script>

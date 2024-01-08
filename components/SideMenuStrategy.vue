@@ -12,7 +12,7 @@ const { onChangeFilter } = strategyStore
 const { filter, filteredNavigation } = storeToRefs(strategyStore)
 
 const isActive = (path: string) => {
-  return route.path.split('/')[2] === path
+  return route.path.split('/')[3] === path.split('/')[1]
 }
 
 </script>
@@ -27,9 +27,9 @@ const isActive = (path: string) => {
       {{ item.title }}
     </div>
     <template v-for="subMenu in item.data " :key="subMenu">
-      <NuxtLink :to="`/strategy/${subMenu}`">
-        <li class="menu-item" :class="{ active: isActive(subMenu) }" @click="action?.()">
-          {{ capitalize(subMenu.split('-').join(' ')) }}
+      <NuxtLink :to="`/strategy/${subMenu.link}`">
+        <li class="menu-item" :class="{ active: isActive(subMenu.link) }" @click="action?.()">
+          {{ capitalize(subMenu.title) }}
         </li>
       </NuxtLink>
     </template>
@@ -38,10 +38,10 @@ const isActive = (path: string) => {
 
 <style scoped lang="scss">
 .menu-item {
-  @apply px-5 py-2 mx-4 md:mx-0 cursor-pointer border-l md:border-l-transparent text-xl md:text-base border-l-white/20 hover:text-teal-500 duration-300;
+  @apply px-5 py-2 mx-4 md:mx-0 cursor-pointer border-l md:border-l-transparent text-xl md:text-base border-l-white/20 hover:text-teal-500 ;
 }
 
 .active {
-  @apply text-gradient duration-300;
+  @apply text-gradient;
 }
 </style>

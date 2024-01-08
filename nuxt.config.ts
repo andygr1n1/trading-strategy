@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   routeRules: {
-    '/strategy': { redirect: '/strategy/strategy' },
+    '/strategy': { redirect: '/strategy/menu/strategy' },
     '/': { redirect: '/blog/blog' },
     '/blog': { redirect: '/blog/blog' }
   },

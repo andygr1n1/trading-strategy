@@ -27,9 +27,9 @@ const isActive = (path: string) => {
       {{ item.title }}
     </div>
     <template v-for="subMenu in item.data " :key="subMenu">
-      <NuxtLink :to="`/blog/${subMenu}`">
-        <li class="menu-item" :class="{ active: isActive(subMenu) }" @click="action?.()">
-          {{ capitalize(subMenu.split('-').join(' ')) }}
+      <NuxtLink :to="`/blog/${subMenu.link}`">
+        <li class="menu-item" :class="{ active: isActive(subMenu.link) }" @click="action?.()">
+          {{ capitalize(subMenu.title) }}
         </li>
       </NuxtLink>
     </template>
