@@ -67,4 +67,8 @@
   .text-gradient {
     @apply bg-gradient-to-r from-teal-600 via-teal-500 to-blue-500 text-transparent bg-clip-text;
   }
+
+  .styled-scroll {
+    @apply overflow-y-scroll scrollbar-thumb-teal-600 scrollbar-track-slate-900  scrollbar-thin;
+  }
 }

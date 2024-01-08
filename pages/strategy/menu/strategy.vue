@@ -57,10 +57,23 @@ definePageMeta({
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-1-vhod_ot_order_block.png" description="Order Block" />
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-2-vhod_ot_breaker_block.png" description="Breaker Block" />
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-3-vhod_ot_mitigation_block.png" description="Mitigation Block" />
-    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-4-vhod-ot-urovnea-v-razvorot.png" description="V from level в разворот" />
-    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-5-vhod-ot-urovnea-v-razvorot.png" description="V from level в разворот" />
-    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-6-vhod-ot-urovnea-v-prodoljenie.png" description="V from level в продолжение" />
-    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-7-vhod-ot-urovnea-v-prodoljenie-v-2.png" description="V from level в продолжение" />
+    <!--  -->
+    <ADivider class="bg-slate-500" />
+    <p class="bg-gradient w-fit text-slate-950 font-bold px-5 rounded-md">
+      Вход от уровня в разворот
+    </p>
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-4-vhod-ot-urovnea-v-razvorot.png" description="" />
+    <!--  -->
+    <ADivider class="bg-slate-500" />
+    <p class="bg-gradient w-fit text-slate-950 font-bold px-5 rounded-md">
+      Вход от уровня в продолжение:
+    </p>
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-6-vhod-ot-urovnea-v-prodoljenie.png" description="" />
+    <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-7-vhod-ot-urovnea-v-prodoljenie-v-2.png" description="" />
+    <p> Входя в продолжение, все же лучше дожидаться большего отката.</p>
+    <p>  Откат - это массивное движение, равное примерно 50% предыдущей волны. Откат не может произойти двумя-тремя свечами.</p>
+    <ADivider class="bg-slate-500" />
+    <!--  -->
     <h6 class="uppercase">
       2. Сигналы на вход
     </h6>
@@ -98,6 +111,6 @@ definePageMeta({
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-4-2-otsutstvie-adekvatnogo-dvijenia.png" description="Не входить при отсутствии адекватного движения" />
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-4-3-vspishka_obiemov.png" description="Не входить при вспышках объёмов" />
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/treugolinik%20-%20signal%20protiv%20vhoda.png" description="Не входить в треугольнике" />
-    <p>Также следует обратить особое внимание при <UniversalUFocus text="выходе важных новостей" /> и <UniversalUFocus text="по времени" /> .</p>
+    <p>Также следует обратить особое внимание при <UniversalUFocus text="выходе важных новостей" /> и <UniversalUFocus text="по времени" />.</p>
   </div>
 </template>

@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   routeRules: {
     '/strategy': { redirect: '/strategy/menu/strategy' },
-    '/': { redirect: '/blog/blog' },
-    '/blog': { redirect: '/blog/blog' }
+    '/': { redirect: '/blog/menu/blog' },
+    '/blog': { redirect: '/blog/menu/blog' }
   },
   devtools: { enabled: true },
   typescript: {

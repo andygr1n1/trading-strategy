@@ -27,6 +27,7 @@ export const useBlogStore = defineStore('useBlogStore', {
 const navigation: INav[] = [
   {
     title: 'menu',
-    data: [{ title: 'blog', link: 'blog' }]
+    data: [{ title: 'blog', link: 'menu/blog' }]
   },
-  { title: 'crypto', data: [{ title: 'icp-bright-future', link: 'icp-bright-future' }] }]
+  { title: 'crypto', data: [{ title: 'Bright future of ICP', link: 'crypto/icp-bright-future' }] },
+  { title: 'trading', data: [{ title: 'Entry after fall', link: 'trading/entry-after-fall' }] }]
