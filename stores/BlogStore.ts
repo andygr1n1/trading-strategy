@@ -1,13 +1,14 @@
 import { defineStore } from 'pinia'
+import type { INav } from './types'
 
 export const useBlogStore = defineStore('useBlogStore', {
   state: () => ({ navigation, filter: '' }),
   getters: {
     filteredNavigation: (state) => {
       // return state.navigation.filter(nav => nav.toLowerCase().includes(state.filter.trim().toLowerCase()))
-      const filtered:{title:string, data: string[]}[] = []
+      const filtered:INav[] = []
       state.navigation.forEach((block) => {
-        const subMenus = block.data.filter(subMenu => subMenu.toLowerCase().includes(state.filter.trim().toLowerCase()))
+        const subMenus = block.data.filter(subMenu => subMenu.title.toLowerCase().includes(state.filter.trim().toLowerCase()))
         if (subMenus.length) { filtered.push({ title: block.title, data: subMenus }) }
       })
 
@@ -23,9 +24,9 @@ export const useBlogStore = defineStore('useBlogStore', {
   }
 })
 
-const navigation: {title:string, data: string[]}[] = [
+const navigation: INav[] = [
   {
     title: 'menu',
-    data: ['blog']
+    data: [{ title: 'blog', link: 'blog' }]
   },
-  { title: 'crypto', data: ['icp-bright-future'] }]
+  { title: 'crypto', data: [{ title: 'icp-bright-future', link: 'icp-bright-future' }] }]
