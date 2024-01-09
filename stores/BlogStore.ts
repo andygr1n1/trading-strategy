@@ -32,6 +32,6 @@ const navigation: INav[] = [
   { title: 'crypto', data: [{ title: 'Bright future of ICP', link: 'crypto/icp-bright-future' }] },
   {
     title: 'trading',
-    data: [{ title: 'Entry after fall', link: 'trading/entry-after-fall' },
+    data: [{ title: 'After fall strategy', link: 'trading/entry-after-fall' },
       { title: 'Ikigai strategy', link: 'trading/ikigai-strategy' }]
   }]
