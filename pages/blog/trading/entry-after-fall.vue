@@ -1,4 +1,4 @@
-<script></script>
+<script lang="ts"></script>
 <template>
   <div class="w-full h-full py-3 animate-opacity">
     <h5 class="text-slate-500 opacity-50">

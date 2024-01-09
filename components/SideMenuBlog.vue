@@ -5,16 +5,13 @@ import { useBlogStore } from '../stores/BlogStore'
 defineProps<{
   action?:() => void
 }>()
-
 const route = useRoute()
 const blogStore = useBlogStore()
 const { onChangeFilter } = blogStore
 const { filter, filteredNavigation } = storeToRefs(blogStore)
-
 const isActive = (path: string) => {
   return route.path.split('/')[3] === path.split('/')[1]
 }
-
 </script>
 
 <template>
