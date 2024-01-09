@@ -16,12 +16,12 @@ watch(
     websiteConfig.value = { path: routePath, subPath: route.path }
   }
 )
-
 </script>
 
 <template>
   <div
-    class="md:min-w-[220px] md:fixed flex-col w-full md:w-[220px] border-r border-transparent md:border-r-teal-500/50 h-full md:min-h-[calc(100vh-var(--top-bar-height))]">
+    class="md:min-w-[220px] md:fixed flex-col w-full md:w-[220px] border-r border-transparent
+    md:border-r-teal-500/50 h-full md:min-h-[calc(100vh-var(--top-bar-height))]">
     <div class="mt-8 uppercase flex flex-col pb-6 text-lg text-center font-bold">
       <span class="-ml-8">trading</span> <span class="text-gradient">strategy</span>
     </div>

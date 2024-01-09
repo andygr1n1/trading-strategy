@@ -30,5 +30,6 @@
   "[vue]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "500",
 }
