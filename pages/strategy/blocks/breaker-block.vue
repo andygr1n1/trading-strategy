@@ -10,6 +10,6 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    Breaker block
+    <UniversalUModuleTitle text="Брейкер" />
   </div>
 </template>

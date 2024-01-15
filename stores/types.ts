@@ -8,4 +8,4 @@ export type ValueOf<T> = T[keyof T]
 
 // export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>
 
-export type INav = {title:string, data: {title:string, link:string}[]}
+export type INav = {title:string, data: {title:string, link:string, tags?: string[]}[]}

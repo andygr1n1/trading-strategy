@@ -10,6 +10,6 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    Order block
+    <UniversalUModuleTitle text="Ордер" />
   </div>
 </template>

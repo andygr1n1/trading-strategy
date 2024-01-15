@@ -10,13 +10,32 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    <h5 class="text-slate-500 opacity-50">
-      Narrowing + Expansion
-    </h5>
-    <p><UniversalUFocus text="From Block and From Level." /></p>
-    <p><UniversalUFocus text="If the trade is from a level to a reversal, then in addition to the signal there should be a step." /></p>
-    <p>
-      Сигнал на вход должен появиться не дальше чем на 1 среднюю свечу от уровня
-    </p>
+    <UniversalUModuleTitle text="Сужение - расширение" />
+    <ol class="flex flex-col gap-2">
+      <li class="flex gap-2">
+        <ThunderboltOutlined class="text-amber-500 mt-1" />
+        <div>И <UniversalUFocus text="от блока и от уровня." /></div>
+      </li>
+      <li class="flex gap-2">
+        <ThunderboltOutlined class="text-amber-500 mt-1" />
+        <div>Если от уровня в разворот, <UniversalUFocus text="необходимо дождаться ступеньки" /></div>
+      </li>
+      <li class="flex gap-2">
+        <ThunderboltOutlined class="text-amber-500 mt-1" />
+        <div>
+          Сигнал на вход должен появиться не дальше чем на <UniversalUFocus text="1 среднюю свечу от уровня" />
+        </div>
+      </li>
+    </ol>
+    <h6 class="my-4 uppercase">
+      ГЕНЕРАЦИЯ СИГНАЛА
+    </h6>
+    <p>- рынок доходит до уровня</p>
+    <p>- диапазон свечей сужается</p>
+    <p>- происходит прострел в обратную сторону</p>
+    <p><UniversalUFocus text="На сужении объем снижен, на расширении повышен" /></p>
+    <LazyUniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/strategy/rashirenie-bazovoe.png" description="Расширение" />
+    <p>Далее расширение происходит серией свечей. Повышение объема и волатильности на этих свечах может быть менее значительным.</p>
+    <LazyUniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/strategy/rashirenie-seriei.png" description="Расширение серией" />
   </div>
 </template>

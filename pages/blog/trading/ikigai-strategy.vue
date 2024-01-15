@@ -2,10 +2,7 @@
 </script>
 <template>
   <div class="w-full h-full py-3 animate-opacity">
-    <h5 class="text-slate-500 opacity-50">
-      Ikigai strategy
-    </h5>
-    <h6>Стратегия Ikigai</h6>
+    <UniversalUModuleTitle text="Базовая стратегия" />
     <p>
       Очень гибкая стратегия. Всегда будет актуальной, её можно использовать на любых активах и в любых временных
       интервалах.

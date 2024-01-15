@@ -8,7 +8,8 @@ export const useStrategyStore = defineStore('StrategyStore', {
       // return state.navigation.filter(nav => nav.toLowerCase().includes(state.filter.trim().toLowerCase()))
       const filtered:INav[] = []
       state.navigation.forEach((block) => {
-        const subMenus = block.data.filter(subMenu => subMenu.title.toLowerCase().includes(state.filter.trim().toLowerCase()))
+        const subMenus = block.data.filter(subMenu => subMenu.title.toLowerCase().includes(state.filter.trim().toLowerCase()) ||
+        subMenu.tags?.toString().toLowerCase().includes(state.filter.trim().toLowerCase()))
         if (subMenus.length) { filtered.push({ title: block.title, data: subMenus }) }
       })
 
@@ -26,49 +27,65 @@ export const useStrategyStore = defineStore('StrategyStore', {
 
 const navigation: INav[] = [
   {
-    title: 'menu',
-    data: [{ title: 'strategy', link: 'menu/strategy' }, { title: 'check-list', link: 'menu/check-list' }, { title: 'risk-management', link: 'menu/risk-management' }]
+    title: 'меню',
+    data: [{ title: 'стратегия', link: 'menu/strategy' }, { title: 'чек лист', link: 'menu/check-list', tags: ['check list'] }, { title: 'риски', link: 'menu/risk-management' }]
   },
   {
-    title: 'levels',
-    data: [{ title: 'level', link: 'levels/level' }]
+    title: 'основы',
+    data: [{ title: 'тайм фрейм', link: 'basics/time-frame' }]
   },
   {
-    title: 'blocks',
-    data: [{
-      title: 'order-block',
-      link: 'blocks/order-block'
-    },
-    { title: 'breaker-block', link: 'blocks/breaker-block' },
-    { title: 'mitigation-block', link: 'blocks/mitigation-block' }]
-  },
-  {
-    title: 'primary signals',
+    title: 'уровни',
     data: [
-      { title: 'Narrowing + expansion', link: 'primary-signals/narrowing-expansion' },
-      { title: 'False breakout + false takeaway (V)', link: 'primary-signals/false-breakout' },
-      { title: 'Double vertex / underworld', link: 'primary-signals/double-vertex-underworld' },
-      { title: 'Divergence + realization', link: 'primary-signals/divergence-realization' },
-      { title: 'Touch + step', link: 'primary-signals/touch-step' }
+      { title: 'Уровень', link: 'levels/level', tags: ['levels'] },
+      { title: 'Трендовые линии', link: 'levels/trend-line', tags: ['trend'] }
     ]
   },
   {
-    title: 'stop signals',
+    title: 'блоки',
     data: [{
-      title: 'Triangle',
+      title: 'ордер',
+      link: 'blocks/order-block'
+    },
+    { title: 'брейкер', link: 'blocks/breaker-block' },
+    { title: 'митигейшн', link: 'blocks/mitigation-block' }]
+  },
+  {
+    title: 'основные сигналы',
+    data: [
+      { title: 'Сужение - расширение', link: 'primary-signals/narrowing-expansion' },
+      { title: 'V-образный разворот', link: 'primary-signals/false-breakout' },
+      { title: 'Двойное дно / вершина', link: 'primary-signals/double-vertex-underworld' },
+      { title: 'Дивергенция + реализация', link: 'primary-signals/divergence-realization' },
+      { title: 'Касание + ступенька', link: 'primary-signals/touch-step' }
+    ]
+  },
+  {
+    title: 'стоп сигналы',
+    data: [{
+      title: 'Треугольник',
       link: 'stop-signals/triangle'
     },
     {
-      title: 'Breakdown',
+      title: 'Пробой',
       link: 'stop-signals/Breakdown'
+    },
+    {
+      title: 'Останавливающий объём',
+      link: 'stop-signals/stop-volume'
     }
     ]
   },
   {
-    title: 'indicators',
-    data: [{
-      title: 'Delta',
-      link: 'indicators/delta'
-    }
+    title: 'индикаторы',
+    data: [
+      {
+        title: 'Дельта',
+        link: 'indicators/delta'
+      },
+      {
+        title: 'atr',
+        link: 'indicators/atr'
+      }
     ]
   }]

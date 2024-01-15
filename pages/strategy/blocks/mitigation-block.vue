@@ -10,6 +10,7 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    Mitigation block
+    <UniversalUModuleTitle text="Митигейшн" />
+    <p>В  Mitigation block учитывать тренд, и исследовать его по откатам.</p>
   </div>
 </template>

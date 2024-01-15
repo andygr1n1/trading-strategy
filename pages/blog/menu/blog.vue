@@ -7,9 +7,7 @@ definePageMeta({
 
 <template>
   <div class="w-full h-full py-3 animate-opacity">
-    <h5 class="text-slate-500 opacity-50">
-      Blog
-    </h5>
+    <UniversalUModuleTitle text="Блог" />
     <div class="flex flex-wrap w-full gap-5">
       <!--  -->
       <NuxtLink to="/blog/trading/ikigai-strategy" class="flex flex-col rounded  bg-slate-950 p-3 h-fit w-full hover:scale-[101%] duration-300">

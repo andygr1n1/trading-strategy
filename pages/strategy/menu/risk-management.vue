@@ -8,6 +8,7 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full py-3 animate-opacity">
+    <UniversalUModuleTitle text="Риски" />
     <h6 class="uppercase">
       Фундаментальные правила
     </h6>

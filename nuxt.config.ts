@@ -24,6 +24,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@ant-design-vue/nuxt',
     '@nuxt/image',
-    ['@nuxtjs/google-fonts', { families: { Ubuntu: true }, display: 'swap', prefetch: true }]
+    ['@nuxtjs/google-fonts', { families: { Ubuntu: true, Scada: [100, 200, 300, 400, 500, 600, 700], 'El Messiri': true }, display: 'swap', prefetch: true }]
   ]
 })

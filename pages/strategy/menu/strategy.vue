@@ -12,9 +12,7 @@ definePageMeta({
 
 <template>
   <div class="w-full h-full py-3 animate-opacity">
-    <h5 class="text-slate-500 opacity-50 ">
-      Теория
-    </h5>
+    <UniversalUModuleTitle text="Стратегия" />
     <h6 class="uppercase">
       1. Определить Блоки на фоновом тайм фрейме
     </h6>
@@ -54,6 +52,22 @@ definePageMeta({
     <h6 class="uppercase">
       1. Вход в позицию
     </h6>
+    <p>
+      <UniversalUFocus text="Сигнал на вход – " />
+      это определенная свечная модель, показывающая,
+      что инициатива перешла от покупателей к продавцам (или от продавцов к покупателям) и рынок готов двигаться дальше по тренду.
+      Существует несколько свечных моделей, которые служат нам сигналом на вход.
+    </p>
+    <p>
+      <UniversalUFocus text="Сигналы" />
+      появляются на графике постоянно, но используем мы только те, которые соответствуют всем критериям для входа в сделку,
+      а именно: сформированы от уровня и на откате. Если вы будете пренебрегать этими критериями,
+      то количество ошибочных входов будет огромным и заработать вы не сможете.
+    </p>
+    <p>
+      Важно помнить, что точки входа появляются не на каждом движении. Какие-то движения мы вынуждены отдавать рынку.
+      Если вы будете пытаться взять каждое движение в рынке, это приведет вас к системным убыткам.
+    </p>
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-1-vhod_ot_order_block.png" description="Order Block" />
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-2-vhod_ot_breaker_block.png" description="Breaker Block" />
     <UniversalUImage href="https://firebunny-storage.b-cdn.net/trading/trading-strategy/2-1-3-vhod_ot_mitigation_block.png" description="Mitigation Block" />

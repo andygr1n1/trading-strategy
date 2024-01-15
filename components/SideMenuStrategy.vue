@@ -21,7 +21,7 @@ const isActive = (path: string) => {
   <input
     v-model="filter"
     class="rounded-sm px-2 sticky top-0 border-white/20 md:border-transparent min-h-[40px] h-10 w-[calc(100%-32px)] focus:w-[calc(100%-34px)] mx-4 my-10 border  focus:border-teal-500"
-    placeholder="Search..." @input="onChangeFilter" />
+    placeholder="Поиск..." @input="onChangeFilter" />
   <div class="overflow-auto styled-scroll pb-10">
     <template v-for="item in filteredNavigation" :key="item">
       <div class="opacity-30 text-slate-400 pointer-events-none font-bold uppercase py-2">

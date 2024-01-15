@@ -10,9 +10,7 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    <h5 class="text-slate-500 opacity-50">
-      Touch + step
-    </h5>
+    <UniversalUModuleTitle text="Касание + ступенька" />
     <p><UniversalUFocus text="Only from Block!" /></p>
   </div>
 </template>

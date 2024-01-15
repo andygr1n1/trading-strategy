@@ -10,9 +10,7 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    <h5 class="text-slate-500 opacity-50">
-      Double vertex / underworld
-    </h5>
+    <UniversalUModuleTitle text="Двойное дно / вершина" />
     <p><UniversalUFocus text="From Block and From Level." /></p>
   </div>
 </template>

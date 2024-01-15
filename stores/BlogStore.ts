@@ -26,12 +26,14 @@ export const useBlogStore = defineStore('useBlogStore', {
 
 const navigation: INav[] = [
   {
-    title: 'menu',
-    data: [{ title: 'blog', link: 'menu/blog' }]
+    title: 'меню',
+    data: [{ title: 'Блог', link: 'menu/blog' }]
   },
-  { title: 'crypto', data: [{ title: 'Bright future of ICP', link: 'crypto/icp-bright-future' }] },
+  { title: 'крипто', data: [{ title: 'Светлое будущее ICP', link: 'crypto/icp-bright-future' }] },
   {
-    title: 'trading',
-    data: [{ title: 'After fall strategy', link: 'trading/entry-after-fall' },
-      { title: 'Ikigai strategy', link: 'trading/ikigai-strategy' }]
+    title: 'трэйдинг',
+    data: [
+      { title: '🔑 Базовая стратегия', link: 'trading/ikigai-strategy' },
+      { title: 'Стратегия после падения рынка', link: 'trading/entry-after-fall' },
+      { title: 'Forex стратегия', link: 'trading/forex-strategy' }]
   }]
