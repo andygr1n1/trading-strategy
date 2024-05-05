@@ -9,14 +9,14 @@
 // scrollbar-track-global-bg
 @layer base {
   body {
-    @apply bg-gray-900 animate-opacity-md text-gray-300 md:ml-10 overflow-y-scroll scrollbar-thumb-teal-600 scrollbar-track-slate-900  scrollbar-thin;
+    @apply bg-gray-900 animate-opacity-md text-gray-200 md:ml-10 overflow-y-scroll scrollbar-thumb-teal-600 scrollbar-track-slate-900  scrollbar-thin;
     font-family: "Ubuntu";
   }
   h1 {
     @apply text-5xl md:text-6xl;
   }
   h2 {
-    @apply text-4xl md:text-5xl;
+    @apply text-4xl font-bold md:text-5xl;
   }
   h3 {
     @apply text-3xl md:text-4xl;
@@ -27,12 +27,13 @@
   h5 {
     @apply text-xl md:text-2xl pb-4;
   }
+
   h6 {
-    @apply text-base md:text-lg;
+    @apply text-lg font-bold md:text-xl;
   }
 
   p {
-    @apply my-2 leading-8 text-base;
+    @apply my-8 leading-7 text-xl;
   }
 
   /* Chrome, Safari, Edge, Opera */
