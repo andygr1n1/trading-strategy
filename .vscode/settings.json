@@ -32,4 +32,7 @@
   },
   "editor.fontLigatures": true,
   "editor.fontWeight": "500",
+  "cSpell.words": [
+    "флэтить"
+  ],
 }
