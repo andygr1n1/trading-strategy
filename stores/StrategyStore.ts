@@ -69,6 +69,12 @@ const navigation: INav[] = [
     data: [{
       title: 'Delta',
       link: 'indicators/delta'
+    }, {
+      title: 'Atr',
+      link: 'indicators/atr'
+    }, {
+      title: 'Volatility',
+      link: 'indicators/volatility'
     }
     ]
   }]
