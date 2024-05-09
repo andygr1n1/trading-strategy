@@ -10,7 +10,7 @@ useSeoMeta({
 
 <template>
   <div class="w-full h-full animate-opacity">
-    <ArticleATitle text="Volatility" />
+    <ArticleATitle text="Волатильность" />
     <p>
       Когда вы видите увеличение волатильности в сторону движения, это говорит о том, что в инструмент заходит толпа.
     </p>
