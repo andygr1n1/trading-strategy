@@ -17,6 +17,32 @@ export default defineNuxtConfig({
     // }
 
   },
+  i18n: {
+    strategy: 'prefix_and_default',
+    defaultLocale: 'ru',
+    locales: [
+     {
+        code: 'ru',
+        name: 'Russian'
+      },
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'pt',
+        name: 'Portuguese'
+       },
+       {
+        code: 'ro',
+        name: 'Romanian'
+      },
+      {
+        code: 'es',
+        name: 'Español'
+      },
+    ]
+  },
   css: ['~/assets/css/main.scss'],
   modules: [
     '@pinia/nuxt',
@@ -24,6 +50,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@ant-design-vue/nuxt',
     '@nuxt/image',
-    ['@nuxtjs/google-fonts', { families: { Ubuntu: true }, display: 'swap', prefetch: true }]
+    ['@nuxtjs/google-fonts', { families: { Ubuntu: true }, display: 'swap', prefetch: true }],
+    '@nuxtjs/i18n'
   ]
 })

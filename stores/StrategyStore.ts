@@ -36,11 +36,11 @@ const navigation: INav[] = [
   {
     title: 'blocks',
     data: [{
-      title: 'order-block',
+      title: 'Ордер Блок',
       link: 'blocks/order-block'
     },
-    { title: 'breaker-block', link: 'blocks/breaker-block' },
-    { title: 'mitigation-block', link: 'blocks/mitigation-block' }]
+    { title: 'Брейкер Блок', link: 'blocks/breaker-block' },
+    { title: 'Митигейшн Блок', link: 'blocks/mitigation-block' }]
   },
   {
     title: 'primary signals',
@@ -67,13 +67,13 @@ const navigation: INav[] = [
   {
     title: 'indicators',
     data: [{
-      title: 'Delta',
+      title: 'Дельта',
       link: 'indicators/delta'
     }, {
-      title: 'Atr',
+      title: 'Атр',
       link: 'indicators/atr'
     }, {
-      title: 'Volatility',
+      title: 'Волатильность',
       link: 'indicators/volatility'
     }
     ]
